@@ -52,7 +52,7 @@ Options for the `AutofocusControl`.
 | `maxZoom` | `integer` | Specifies the maximum zoom level to use when displaying data view collection: Default: `20` |
 | `minZoom` | `integer` | Specifies the minimum zoom level to use when displaying data view collection: Default: `1` |
 | `padding` | `number` | The amount of pixel padding around the data to account for when setting the map view. Default: `100` |
-| `sources` | `(atlas.source.DataSource \| string)[]` | An arrary of data source objects or IDs to focus on. By default this control will calculate the coverage area of DataSource imstances in the map. |
+| `sources` | `(atlas.source.DataSource \| string)[]` | An arrary of data source objects or IDs to focus on. By default this control will calculate the coverage area of DataSource instances in the map. |
 | `style` | `atlas.ControlStyle` \| `string` | The style of the control. Can be; `light`, `dark`, `auto`, or any CSS3 color. When set to auto, the style will change based on the map style. Overridden if device is in high contrast mode. Default `light`. |
 | `type` | `atlas.Options` \| `string` | The type of animation to perform. Can be; `jump`, `ease`, or `fly`. Default `jump`. |
 
