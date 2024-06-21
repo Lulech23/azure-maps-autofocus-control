@@ -1,4 +1,11 @@
-## azure-maps-bring-data-into-view-control Changelog
+## azure-maps-autofocus-control Changelog
+
+<a name="0.0.5"></a>
+# 0.0.5 (2024-06-21)
+
+- Renamed control to "autofocus"
+- Added support for multiple new camera and animation options
+- Cleaned up code (WIP)
 
 <a name="0.0.3"></a>
 # 0.0.3 (2022-11-10)
@@ -14,7 +21,6 @@
 - Ability to limit the scope to a subset of data sources.
 - Ability to include/exclude image layers and HTML markers from the view calculations.
 
-
 <a name="0.0.1"></a>
 # 0.0.1 (2020-08-21)
 
@@ -22,4 +28,3 @@
 
 - Control for getting the users position.
 - Ability to track the users position.
-
