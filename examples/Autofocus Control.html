@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bring Data Into View Control - Azure Maps Web SDK Samples</title>
+    <title>Autofocus Control - Azure Maps Web SDK Samples</title>
 
     <meta charset="utf-8" />
 	<link rel="shortcut icon" href="/favicon.ico"/>
@@ -12,11 +12,11 @@
     <meta name="author" content="Microsoft Azure Maps" />
 
     <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
-    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
-    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.css" type="text/css" />
+    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.js"></script>
 
     <!-- Add reference to the bring data into view control module. -->
-    <script src="../dist/azure-maps-bring-data-into-view-control.min.js"></script>
+    <script src="../dist/azure-maps-autofocus-control.min.js"></script>
 
     <script type='text/javascript'>
         var map, datasource;
@@ -37,7 +37,7 @@
             map.events.add('ready', function () {
 
                 //Add the bring data into view control to the map.
-                map.controls.add(new atlas.control.BringDataIntoViewControl(), {
+                map.controls.add(new atlas.control.AutofocusControl(), {
                     position: 'top-left'
                 });
 
@@ -81,7 +81,7 @@
     <div id="myMap" style="position:relative;width:100%;min-width:290px;height:600px;"></div>
 
     <fieldset style="width:calc(100% - 30px);min-width:290px;margin-top:10px;">
-        <legend><h1 style="font-size:16px">Bring Data Into View Control</h1></legend>
+        <legend><h1 style="font-size:16px">Autofocus Control</h1></legend>
         This sample shows how to create a simple custom control that centers and zooms the map to fit any data that is loaded on the map. 
         This works with data in a HtmlMarkers, DataSource and ImageLayers. Does not support TileLayers and VectorTileSources.
         This samples uses the open source <a href="https://github.com/Azure-Samples/azure-maps-bring-data-into-view-control" target="_blank">Azure Maps Bing Data into View Control module</a>.
