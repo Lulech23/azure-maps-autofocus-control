@@ -9,24 +9,19 @@ products:
 - azure-maps
 ---
 
-# Azure Maps Bing Data into View Control module
+# Azure Maps Autofocus Control module
 
 An Azure Maps Web SDK module that provides a control that makes it easy to bring any data loaded on the map into view.
 
-**Samples**
-
-[Bring data into view control](https://samples.azuremaps.com/?search=bring%20data&sample=bring-data-into-view-control)
-<br/>[<img src="https://samples.azuremaps.com/controls/bring-data-into-view-control/screenshot.jpg" height="200px">](https://samples.azuremaps.com/?search=bring%20data&sample=bring-data-into-view-control)
-
 ## Getting started
 
-Download the project and copy the `azure-maps-bring-data-into-view-control` JavaScript file from the `dist` folder into your project.
+Download the project and copy the `azure-maps-autofocus-control` JavaScript file from the `dist` folder into your project.
 
 **Usage**
 
 ```JavaScript
-//Add the bring data into view control to the map.
-map.controls.add(new atlas.control.BringDataIntoViewControl());
+// Add the bring data into view control to the map.
+map.controls.add(new atlas.control.AutofocusControl());
 ```
 
 ## API Reference
@@ -41,27 +36,31 @@ A control that makes it easy to bring any data loaded on the map into view.
 
 **Contstructor**
 
-> `BringDataIntoViewControl(options?: BringDataIntoViewControlOptions)`
+> `AutofocusControl(options?: AutofocusControlOptions)`
 
-### BringDataIntoViewControlOptions interface
+### AutofocusControlOptions interface
 
-Options for the `BringDataIntoViewControl`.
+Options for the `AutofocusControl`.
 
 **Properties** 
 
 | Name | Type | Description |
 |------|------|-------------|
+| `duration` | `number` | The amount of time over which to animate to the new camera state. Default: `1000` |
 | `includeImageLayers` | `boolean` | Specifies if image layer should be included in the data view calculation: Default: `true` |
 | `includeMarkers` | `boolean` | Specifies if HTML markers should be included in the data view calculation: Default: `true` |
+| `maxZoom` | `integer` | Specifies the maximum zoom level to use when displaying data view collection: Default: `20` |
+| `minZoom` | `integer` | Specifies the minimum zoom level to use when displaying data view collection: Default: `1` |
 | `padding` | `number` | The amount of pixel padding around the data to account for when setting the map view. Default: `100` |
 | `sources` | `(atlas.source.DataSource \| string)[]` | An arrary of data source objects or IDs to focus on. By default this control will calculate the coverage area of DataSource imstances in the map. |
 | `style` | `atlas.ControlStyle` \| `string` | The style of the control. Can be; `light`, `dark`, `auto`, or any CSS3 color. When set to auto, the style will change based on the map style. Overridden if device is in high contrast mode. Default `light`. |
+| `type` | `atlas.Options` \| `string` | The type of animation to perform. Can be; `jump`, `ease`, or `fly`. Default `jump`. |
 
 Methods
 
 | Name | Return Type | Description |
 |------|------|-------------|
-| `setOptions(options: BringDataIntoViewControlOptions)` | | Sets the options on the control. |
+| `setOptions(options: AutofocusControlOptions)` | | Sets the options on the control. |
 
 ## Related Projects
 
