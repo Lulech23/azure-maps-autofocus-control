@@ -34,7 +34,7 @@ Namespace: `atlas.control`
 
 A control that makes it easy to bring any data loaded on the map into view.
 
-**Contstructor**
+**Constructor**
 
 > `AutofocusControl(options?: AutofocusControlOptions)`
 
